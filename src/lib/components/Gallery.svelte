@@ -64,6 +64,7 @@
 				<button
 					type="button"
 					onclick={() => openLightbox(i)}
+					aria-label="Ver imagem {i + 1}"
 					class="group bg-white rounded-2xl border border-zinc-200 p-4 transition-all duration-300 hover:border-primary/40 hover:shadow-lg hover:-translate-y-1 cursor-pointer text-left"
 				>
 					<div class="relative aspect-[4/3] rounded-xl overflow-hidden">
@@ -101,6 +102,7 @@
 		<button
 			type="button"
 			onclick={closeLightbox}
+			aria-label="Fechar"
 			class="absolute top-4 right-4 z-10 w-12 h-12 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white transition-colors"
 		>
 			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -116,6 +118,7 @@
 		<button
 			type="button"
 			onclick={prevImage}
+			aria-label="Imagem anterior"
 			class="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white transition-colors"
 		>
 			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -140,6 +143,7 @@
 		<button
 			type="button"
 			onclick={nextImage}
+			aria-label="Próxima imagem"
 			class="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white transition-colors"
 		>
 			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -152,6 +156,7 @@
 				<button
 					type="button"
 					onclick={() => currentIndex = i}
+					aria-label="Ir para imagem {i + 1}"
 					class="w-16 h-12 rounded-lg overflow-hidden border-2 transition-all {i === currentIndex ? 'border-white scale-110' : 'border-transparent opacity-50 hover:opacity-80'}"
 				>
 					<div class="w-full h-full bg-gradient-to-br {project.color}"></div>
