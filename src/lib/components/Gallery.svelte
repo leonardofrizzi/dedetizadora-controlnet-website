@@ -1,12 +1,12 @@
 <script lang="ts">
 	import WhatsAppCTA from '$lib/components/WhatsAppCTA.svelte';
 	import { fadeUp, staggerChildren } from '$lib/utils/animations';
-	import gallery1 from '$lib/assets/gallery-1.webp';
-	import gallery2 from '$lib/assets/gallery-2.webp';
-	import gallery3 from '$lib/assets/gallery-3.webp';
-	import gallery4 from '$lib/assets/gallery-4.webp';
-	import gallery5 from '$lib/assets/gallery-5.webp';
-	import gallery6 from '$lib/assets/gallery-6.webp';
+	import gallery1 from '$lib/assets/d1.jpg';
+	import gallery2 from '$lib/assets/d2.jpg';
+	import gallery3 from '$lib/assets/d3.jpg';
+	import gallery4 from '$lib/assets/d4.jpg';
+	import gallery5 from '$lib/assets/d5.jpg';
+	import gallery6 from '$lib/assets/d6.jpg';
 
 	const projects = [
 		{ image: gallery1, alt: 'Dedetização residencial' },

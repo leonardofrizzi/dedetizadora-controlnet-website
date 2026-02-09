@@ -1,7 +1,7 @@
 <script lang="ts">
 	import WhatsAppCTA from '$lib/components/WhatsAppCTA.svelte';
 	import { slideLeft, slideRight, scaleUp } from '$lib/utils/animations';
-	import aboutImage from '$lib/assets/about.webp';
+	import aboutImage from '$lib/assets/sn.jpg';
 </script>
 
 <section id="sobre" class="py-24 md:py-32 bg-white relative overflow-hidden">
