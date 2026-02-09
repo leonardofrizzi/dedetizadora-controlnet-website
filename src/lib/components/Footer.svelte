@@ -7,7 +7,8 @@
 		'Descupinização',
 		'Controle de Aranhas',
 		'Controle de Escorpiões',
-		'Sanitização'
+		'Sanitização',
+		'Fumacê em Condomínios'
 	];
 
 	const links = [

@@ -15,7 +15,7 @@
 		},
 		{
 			title: 'Descupinização',
-			description: 'Tratamento especializado contra cupins em madeiras, móveis e estruturas.',
+			description: 'Cupim de Solo, Cupim de Madeira Seca e Broca. Garantia de 2 anos.',
 			icon: '🪵'
 		},
 		{
@@ -32,6 +32,11 @@
 			title: 'Sanitização',
 			description: 'Desinfecção de ambientes para eliminação de vírus, bactérias e fungos.',
 			icon: '🧴'
+		},
+		{
+			title: 'Fumacê em Condomínios',
+			description: 'Serviço de fumacê para controle de mosquitos e insetos voadores em condomínios e áreas comuns.',
+			icon: '🌫️'
 		}
 	];
 </script>

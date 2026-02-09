@@ -1,6 +1,7 @@
 <script lang="ts">
 	import WhatsAppCTA from '$lib/components/WhatsAppCTA.svelte';
 	import { slideLeft, slideRight, scaleUp } from '$lib/utils/animations';
+	import aboutImage from '$lib/assets/about.webp';
 </script>
 
 <section id="sobre" class="py-24 md:py-32 bg-white relative overflow-hidden">
@@ -35,20 +36,7 @@
 
 			<div class="relative" use:slideRight>
 				<div class="relative aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl shadow-zinc-900/20">
-					<div class="absolute inset-0 bg-gradient-to-br from-primary via-orange-500 to-amber-500"></div>
-
-					<div class="absolute inset-0 opacity-20" style="background-image: url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23ffffff\' fill-opacity=\'0.4\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
-
-					<div class="absolute inset-0 flex items-center justify-center">
-						<div class="text-center text-white">
-							<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="mx-auto mb-4 opacity-50">
-								<rect width="18" height="18" x="3" y="3" rx="2" ry="2"/>
-								<circle cx="9" cy="9" r="2"/>
-								<path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/>
-							</svg>
-							<p class="text-sm opacity-70">Adicione uma foto da equipe</p>
-						</div>
-					</div>
+					<img src={aboutImage} alt="Equipe Control Net Dedetizadora" class="w-full h-full object-cover" />
 				</div>
 
 				<div class="absolute -bottom-6 left-1/2 -translate-x-1/2 bg-gradient-to-r from-primary to-orange-500 text-white px-6 py-3 rounded-full shadow-xl shadow-primary/30 flex items-center gap-2 whitespace-nowrap">

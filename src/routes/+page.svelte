@@ -6,6 +6,7 @@
 		About,
 		Diferenciais,
 		Gallery,
+		Testimonials,
 		Contact,
 		FAQ,
 		Footer,
@@ -22,6 +23,7 @@
 	<About />
 	<Diferenciais />
 	<Gallery />
+	<Testimonials />
 	<Contact />
 	<FAQ />
 </main>

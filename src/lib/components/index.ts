@@ -9,4 +9,5 @@ export { default as Footer } from './Footer.svelte';
 export { default as WhatsAppButton } from './WhatsAppButton.svelte';
 export { default as WhatsAppCTA } from './WhatsAppCTA.svelte';
 export { default as FAQ } from './FAQ.svelte';
+export { default as Testimonials } from './Testimonials.svelte';
 export { default as CookieConsent } from './CookieConsent.svelte';

@@ -1,14 +1,20 @@
 <script lang="ts">
 	import WhatsAppCTA from '$lib/components/WhatsAppCTA.svelte';
 	import { fadeUp, staggerChildren } from '$lib/utils/animations';
+	import gallery1 from '$lib/assets/gallery-1.webp';
+	import gallery2 from '$lib/assets/gallery-2.webp';
+	import gallery3 from '$lib/assets/gallery-3.webp';
+	import gallery4 from '$lib/assets/gallery-4.webp';
+	import gallery5 from '$lib/assets/gallery-5.webp';
+	import gallery6 from '$lib/assets/gallery-6.webp';
 
 	const projects = [
-		{ color: 'from-primary to-orange-500' },
-		{ color: 'from-orange-500 to-primary' },
-		{ color: 'from-orange-600 to-orange-400' },
-		{ color: 'from-primary to-orange-600' },
-		{ color: 'from-orange-400 to-primary' },
-		{ color: 'from-orange-500 to-orange-600' }
+		{ image: gallery1, alt: 'Dedetização residencial' },
+		{ image: gallery2, alt: 'Controle de pragas comercial' },
+		{ image: gallery3, alt: 'Serviço em residência' },
+		{ image: gallery4, alt: 'Dedetização externa' },
+		{ image: gallery5, alt: 'Tratamento de ambiente' },
+		{ image: gallery6, alt: 'Sanitização profissional' }
 	];
 
 	let lightboxOpen = $state(false);
@@ -68,9 +74,7 @@
 					class="group bg-white rounded-2xl border border-zinc-200 p-4 transition-all duration-300 hover:border-primary/40 hover:shadow-lg hover:-translate-y-1 cursor-pointer text-left"
 				>
 					<div class="relative aspect-[4/3] rounded-xl overflow-hidden">
-						<div class="absolute inset-0 bg-gradient-to-br {project.color}"></div>
-
-						<div class="absolute inset-0 opacity-20" style="background-image: url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23ffffff\' fill-opacity=\'0.4\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
+						<img src={project.image} alt={project.alt} class="w-full h-full object-cover" />
 
 						<div class="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-all flex items-center justify-center">
 							<div class="opacity-0 group-hover:opacity-100 transition-opacity bg-white/20 backdrop-blur-sm rounded-full p-3">
@@ -127,17 +131,7 @@
 		</button>
 
 		<div class="w-full max-w-4xl mx-4 aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
-			<div class="w-full h-full bg-gradient-to-br {projects[currentIndex].color} relative">
-				<div class="absolute inset-0 opacity-20" style="background-image: url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23ffffff\' fill-opacity=\'0.4\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
-
-				<div class="absolute inset-0 flex items-center justify-center">
-					<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="text-white/30">
-						<rect width="18" height="18" x="3" y="3" rx="2" ry="2"/>
-						<circle cx="9" cy="9" r="2"/>
-						<path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/>
-					</svg>
-				</div>
-			</div>
+			<img src={projects[currentIndex].image} alt={projects[currentIndex].alt} class="w-full h-full object-cover" />
 		</div>
 
 		<button
@@ -159,7 +153,7 @@
 					aria-label="Ir para imagem {i + 1}"
 					class="w-16 h-12 rounded-lg overflow-hidden border-2 transition-all {i === currentIndex ? 'border-white scale-110' : 'border-transparent opacity-50 hover:opacity-80'}"
 				>
-					<div class="w-full h-full bg-gradient-to-br {project.color}"></div>
+					<img src={project.image} alt={project.alt} class="w-full h-full object-cover" />
 				</button>
 			{/each}
 		</div>
